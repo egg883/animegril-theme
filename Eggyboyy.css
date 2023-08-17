@@ -21,7 +21,21 @@
  @import url("https://warrayquipsome.github.io/Chillax/Addons/SettingsModalEdited.css");
  @import url("https://crearts-community.github.io/Friends-Grid/theme.css");
 
-
+ span[class*=username-][class*=desaturateUserColors-][class*=clickable] {
+    font-weight: 100;
+  }
+  
+  [class*=markup-][class*=messageContent-]:not([class*=repliedTextPreview-][class*=clickable-] > div) {
+      margin: 5px 0 5px 0;
+      padding: 5px 10px 5px 10px;
+      width: fit-content;
+      border-style: solid;
+      border-width: 2px;  
+      border-radius: 0.75em;
+      border-color: #d38cf0;
+      background: linear-gradient(to right, #424040, #0c6f8825);
+      box-shadow: -6px 6px 0px 0px #00000025;
+  }
 
  .wordmark-2u86JB path {
     display: none !important;
@@ -327,7 +341,13 @@ border-radius: 1rem;
     --forum-channel: #1d5f89;
 }
 
-
+[class*=accountProfilePopoutWrapper-] > div > div > [class*=userPopoutOverlayBackground-] > div:nth-child(1),
+[class*=accountProfilePopoutWrapper-] > div > div > [class*=userPopoutOverlayBackground-] > div:nth-child(2),
+[class*=accountProfilePopoutWrapper-] > div > div > [class*=userPopoutOverlayBackground-] > div:nth-child(3),
+[class*=accountProfilePopoutWrapper-] div[role=separator]
+{
+  display: none;
+}
 
 /*i'm new here, say hi!*/
 [class*=newMemberBadge]:before {
